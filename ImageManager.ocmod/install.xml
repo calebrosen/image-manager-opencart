@@ -6,15 +6,6 @@
   <author>Caleb Rosen</author>
   <link>http://www.fireplaceandgrill.com</link>
 
-
-  <!-- Extension based on opencart version 2 of this link
-  https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=21888
-    It was tested only in Opencart 3.0.3.2, but it should work on all Opencart 3.x
-    Its very important make a backup of file admin/view/javascript/common.js, because this extension
-  overwrite the original file
-    If you already uploaded and didn't make the backup, just download the file common.js from an
-  original opencart3.zip at official site -->
-
   <file path="admin/view/template/catalog/product_form.twig">
     <operation>
       <search><![CDATA[{{ footer }}]]></search>
@@ -22,7 +13,7 @@
                   <!-- input Last Folder Remember -->
                 <input type="hidden" value="{{ last_folder }}" id="last-folder">
              <!-- Multiple images select and insert into product form  -->
-<script>
+      <script>
         $(document).ready(function() {
 
           // Green button - Insert images into form - default order
@@ -47,16 +38,13 @@
                   var hiddenInput = imageRow.querySelector('input[type="hidden"]');
                   if (hiddenInput) {
                     var inputValue = hiddenInput.value;
-                    console.log('Value of hidden input in image-row' + t + ':', inputValue);
                     if (!inputValue) {
                       $('#image-row' + t).remove();
-                      console.log('removed element');
                     }
                   }
                 }
               }
                 
-              //$('#image-row2').remove();
               $('#modal-image').modal('hide');
 
           })
