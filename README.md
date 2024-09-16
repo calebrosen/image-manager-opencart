@@ -1,2 +1,9 @@
 # image-manager-opencart
-Image manager for opencart 3.0.3.8. Allows multiple image upload and saves state of previous folder
+
+# Credit:
+This is an adaption of Ghst's Ultra Image Manager module for OpenCart 3.0.3.8.
+Link to their extension: https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=37546
+
+This extension allows multiple image upload and also saves the path of the previous folder.
+
+
